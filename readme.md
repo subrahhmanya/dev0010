@@ -32,9 +32,6 @@ modified according to the following global defines:
     /* include AES cipher */
     #define AES
 
-        /* include encrypt function */
-        #define AES_ENCR
-
         /* include decrypt function */
         #define AES_DECR
 

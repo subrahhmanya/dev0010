@@ -39,7 +39,6 @@
 #define STATE(R, C) s[R + (C<<2) ]
 #define GALOIS_MUL2(B) (((B) & 0x80) ? (((B) << 1) ^ 0x1b ) : ((B) << 1))
 
-#if AES_ENCR
 
 static const uint8_t sbox[] AES_CONST = {
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5,
@@ -211,9 +210,6 @@ void aes_encr(const aes_ctxt *aes, uint8_t *s)
         }
     }   
 }
-
-#endif
-
 
 #ifdef AES_DECR
 

@@ -2,7 +2,7 @@ CC=gcc
 
 CRYPTO=../crypto
 
-CFLAGS = -O0 -pedantic -std=c99 -Wall -g -D__LITTLE_ENDIAN=1 -I$(CRYPTO) -DAES -DAES_ENCR -DAES_DECR -DAES_GCM -DAES_ECB -DAES_WRAP
+CFLAGS = -O0 -pedantic -std=c99 -Wall -g -D__LITTLE_ENDIAN=1 -I$(CRYPTO) -DAES -DAES_DECR -DAES_GCM -DAES_ECB -DAES_WRAP
 
 test8: CFLAGS := $(CFLAGS) -D__WORD_SIZE=1
 test8: test
